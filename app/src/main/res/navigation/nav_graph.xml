@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/kitapListeFragment">
+
+    <fragment
+        android:id="@+id/kitapListeFragment"
+        android:name="com.hasandag.fragmentsinavahazirlik.KitapListeFragment"
+        android:label="fragment_kitap_liste"
+        tools:layout="@layout/fragment_kitap_liste" >
+        <action
+            android:id="@+id/action_kitapListeFragment_to_kitapDetayFragment"
+            app:destination="@id/kitapDetayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kitapDetayFragment"
+        android:name="com.hasandag.fragmentsinavahazirlik.KitapDetayFragment"
+        android:label="fragment_kitap_detay"
+        tools:layout="@layout/fragment_kitap_detay" />
+</navigation>
